@@ -56,21 +56,6 @@
             bottom: 0;
             width: 100%;
         }
-        /* Bloque de contenido con imagen a la izquierda y texto a la derecha */
-        .contenido {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-        .contenido img {
-            width: 200px;
-            height: auto;
-            margin-right: 20px;
-        }
-        .contenido p {
-            flex: 1;
-            font-size: 1.2rem;
-        }
     </style>
 </head>
 <body>
@@ -78,57 +63,17 @@
         <h1>profediego.cl</h1>
     </header>
     <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#nosotros">Sobre Nosotros</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#contacto">Contacto</a>
+        <a href="inicio.html">Inicio</a>
+        <a href="nosotros.html">Sobre Nosotros</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="contacto.html">Contacto</a>
     </nav>
     <main>
-        <section id="inicio">
-            <h2>Inicio</h2>
-            <p>Bienvenidos a nuestra página web. Aquí encontrarás información sobre nuestros servicios educativos.</p>
-        </section>
-        <section id="nosotros">
-            <h2>Sobre Nosotros</h2>
-            <p>Somos un equipo de profesionales dedicados a la enseñanza de diversas materias.</p>
-        </section>
-        <section id="servicios">
-            <h2>Servicios</h2>
-            <p>Ofrecemos clases particulares, tutorías y preparación para exámenes.</p>
-        </section>
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <p>Puedes contactarnos a través del correo electrónico: contacto@profediego.cl</p>
-        </section>
-
-        <!-- Bloque de contenido con imagen y texto -->
-        <section>
-            <h2>Contenido de ejemplo</h2>
-            <div class="contenido">
-                <img src="https://via.placeholder.com/200" alt="Imagen de ejemplo">
-                <p>Este es un bloque de contenido con una imagen a la izquierda y texto a la derecha. Puedes modificar la imagen cambiando el atributo <code>src</code> de la etiqueta <code>img</code>.</p>
-            </div>
-        </section>
+        <h2>Bienvenidos a nuestra página principal</h2>
+        <p>Este es el inicio de nuestro sitio web.</p>
     </main>
     <footer>
         <p>&copy; 2025 Profe Diego Clases. Todos los derechos reservados.</p>
     </footer>
-    <script>
-        // JavaScript integrado
-        document.addEventListener('DOMContentLoaded', function() {
-            const links = document.querySelectorAll('nav a');
-            links.forEach(link => {
-                link.addEventListener('click', function(event) {
-                    event.preventDefault();
-                    const targetId = this.getAttribute('href').substring(1);
-                    const targetSection = document.getElementById(targetId);
-                    window.scrollTo({
-                        top: targetSection.offsetTop,
-                        behavior: 'smooth'
-                    });
-                });
-            });
-        });
-    </script>
 </body>
 </html>
