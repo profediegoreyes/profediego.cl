@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profe Diego Clases</title>
+    <title>profediego.cl</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
     <style>
         /* Estilos CSS integrados */
         body {
@@ -17,10 +18,19 @@
             color: white;
             padding: 1rem;
             text-align: center;
+            position: relative;
+        }
+        header h1 {
+            font-family: 'Bungee', sans-serif;
+            font-size: 2.5rem;
         }
         nav {
             background-color: #333;
             overflow: hidden;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 10;
         }
         nav a {
             float: left;
@@ -46,11 +56,26 @@
             bottom: 0;
             width: 100%;
         }
+        /* Bloque de contenido con imagen a la izquierda y texto a la derecha */
+        .contenido {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .contenido img {
+            width: 200px;
+            height: auto;
+            margin-right: 20px;
+        }
+        .contenido p {
+            flex: 1;
+            font-size: 1.2rem;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Bienvenidos a Profe Diego Clases</h1>
+        <h1>profediego.cl</h1>
     </header>
     <nav>
         <a href="#inicio">Inicio</a>
@@ -74,6 +99,15 @@
         <section id="contacto">
             <h2>Contacto</h2>
             <p>Puedes contactarnos a través del correo electrónico: contacto@profediego.cl</p>
+        </section>
+
+        <!-- Bloque de contenido con imagen y texto -->
+        <section>
+            <h2>Contenido de ejemplo</h2>
+            <div class="contenido">
+                <img src="https://via.placeholder.com/200" alt="Imagen de ejemplo">
+                <p>Este es un bloque de contenido con una imagen a la izquierda y texto a la derecha. Puedes modificar la imagen cambiando el atributo <code>src</code> de la etiqueta <code>img</code>.</p>
+            </div>
         </section>
     </main>
     <footer>
